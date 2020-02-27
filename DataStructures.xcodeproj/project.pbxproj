@@ -10,6 +10,10 @@
 		74558A0B2407BEDF00D8A1D3 /* DataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74558A012407BEDF00D8A1D3 /* DataStructures.framework */; };
 		74558A102407BEDF00D8A1D3 /* DataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74558A0F2407BEDF00D8A1D3 /* DataStructuresTests.swift */; };
 		74558A122407BEDF00D8A1D3 /* DataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 74558A042407BEDF00D8A1D3 /* DataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74558A1E2407BF8E00D8A1D3 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74558A1D2407BF8E00D8A1D3 /* Node.swift */; };
+		74558A242407C0B600D8A1D3 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74558A232407C0B600D8A1D3 /* NodeTests.swift */; };
+		74558A262408029E00D8A1D3 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74558A252408029E00D8A1D3 /* LinkedList.swift */; };
+		74558A282408033900D8A1D3 /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74558A272408033900D8A1D3 /* LinkedListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		74558A0A2407BEDF00D8A1D3 /* DataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74558A0F2407BEDF00D8A1D3 /* DataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructuresTests.swift; sourceTree = "<group>"; };
 		74558A112407BEDF00D8A1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74558A1D2407BF8E00D8A1D3 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		74558A232407C0B600D8A1D3 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
+		74558A252408029E00D8A1D3 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		74558A272408033900D8A1D3 /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 			children = (
 				74558A042407BEDF00D8A1D3 /* DataStructures.h */,
 				74558A052407BEDF00D8A1D3 /* Info.plist */,
+				74558A1B2407BF7300D8A1D3 /* LinkedList */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -82,8 +91,27 @@
 			children = (
 				74558A0F2407BEDF00D8A1D3 /* DataStructuresTests.swift */,
 				74558A112407BEDF00D8A1D3 /* Info.plist */,
+				74558A1C2407BF7B00D8A1D3 /* LinkedList */,
 			);
 			path = DataStructuresTests;
+			sourceTree = "<group>";
+		};
+		74558A1B2407BF7300D8A1D3 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				74558A1D2407BF8E00D8A1D3 /* Node.swift */,
+				74558A252408029E00D8A1D3 /* LinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		74558A1C2407BF7B00D8A1D3 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				74558A232407C0B600D8A1D3 /* NodeTests.swift */,
+				74558A272408033900D8A1D3 /* LinkedListTests.swift */,
+			);
+			path = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +176,7 @@
 				TargetAttributes = {
 					74558A002407BEDF00D8A1D3 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					74558A092407BEDF00D8A1D3 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74558A262408029E00D8A1D3 /* LinkedList.swift in Sources */,
+				74558A1E2407BF8E00D8A1D3 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74558A242407C0B600D8A1D3 /* NodeTests.swift in Sources */,
+				74558A282408033900D8A1D3 /* LinkedListTests.swift in Sources */,
 				74558A102407BEDF00D8A1D3 /* DataStructuresTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +373,7 @@
 		74558A162407BEDF00D8A1D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8AUK35VJ5R;
@@ -356,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = es.molestudio.DataStructures;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +399,7 @@
 		74558A172407BEDF00D8A1D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8AUK35VJ5R;
@@ -388,6 +424,7 @@
 		74558A192407BEDF00D8A1D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8AUK35VJ5R;
 				INFOPLIST_FILE = DataStructuresTests/Info.plist;
@@ -406,6 +443,7 @@
 		74558A1A2407BEDF00D8A1D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8AUK35VJ5R;
 				INFOPLIST_FILE = DataStructuresTests/Info.plist;
